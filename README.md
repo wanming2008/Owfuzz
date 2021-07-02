@@ -5,6 +5,10 @@
 # Discovered vulnerabilities
 
 
+- [CVE-2021-34173](## CVE-2021-34173)
+- [CVE-2021-34174](## CVE-2021-34173)
+
+
 ## CVE-2021-34173
 
 An attacker can cause a Wi-Fi Denial of Service(DoS) and kernel panic in v4.2 and earlier versions of Espressif's esp32 via a malformated beacon CSA frame. Esp32 device requires a reboot to recover.
