@@ -9,7 +9,7 @@
 - CVE-2021-1903(Undisclosed)
 - CVE-2021-33028(Undisclosed)
 - CVE-2021-33029(Undisclosed)
-- [Qualcomm Vulnerbilities](#Qualcomm Vulnerbilities)
+- [Qualcomm Vulnerbilities](#Qualcomm-Vulnerbilities)
 
 ## CVE-2021-34173
 
@@ -79,7 +79,7 @@ A6      : 0x3ffb92cc  A7
 This vulnerability is discovered in broadcom's BCM4352 and BCM43684 chips. Any wireless router using BCM4352 and BCM43684 will be affected, such as ASUS AX6100. An attacker may cause a Denial of Service (DoS) to any device connected to BCM4352 or BCM43684 routers by an association or reassociation frame.
 
 
-## Qualcomm Vulnerbilities
+## Qualcomm-Vulnerbilities
 - Snapdragon series
 - Killer Wireless AC 1535
 - QCA9005
