@@ -73,7 +73,7 @@ A6      : 0x3ffb92cc  A7
 0x400900f8: ppTask at ??:?
 
 0x40089f75: vPortTaskWrapper at /Users/sc3d4r/Environment/esp/esp-idf/components/freertos/port/xtensa/port.c:168
-
+```
 
 ## CVE-2021-34174
 This vulnerability is discovered in broadcom's BCM4352 and BCM43684 chips. Any wireless router using BCM4352 and BCM43684 will be affected, such as ASUS AX6100. An attacker may cause a Denial of Service (DoS) to any device connected to BCM4352 or BCM43684 routers by an association or reassociation frame.
